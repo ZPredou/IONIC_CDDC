@@ -1,0 +1,37 @@
+<ion-content padding class="homeBack">
+  <ion-fab top right #fab1>
+    <button ion-fab mini color="dark"><ion-icon name="heart"></ion-icon></button>
+    <ion-fab-list #fabList>
+      <div *ngIf="fabList.classList.contains('fab-list-active')" class="backdrop" (click)="fab1.close();"></div>
+      <a button ion-fab href="https://fr-fr.facebook.com/fondationfrances/">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <div class="label">Facebook</div>
+      </a>
+      <a button ion-fab href="https://twitter.com/FFrancesArt">
+        <ion-icon name="logo-twitter"></ion-icon>
+        <div class="label">Twitter</div>
+      </a>
+      <a button ion-fab href="tel:0688360209" clear>
+        <ion-icon name="call"></ion-icon>
+        <div class="label">Besoin d'info ?</div>
+      </a>
+    </ion-fab-list>
+  </ion-fab>
+  <img class="banner-mobile" src="./assets/imgs/Salagrama.jpg">
+  <img class="banner" src="./assets/imgs/Eggbranch.jpg">
+  <div class="caption-wrap">
+    <div class="caption">
+      <h1>LA FABRIQUE DE L'ESPRIT</h1>
+      <h2>Du regard à l'expérience</h2>
+      <p>DU 23 FÉVRIER AU 24 AOÛT 2018</p>
+    </div>
+  </div>
+  <img class="logo" src="./assets/imgs/FDE-Unesco.png">
+  <div class="wrapping-title">
+    <h1> A propos ..</h1>
+    <h2> Nos projets d'avenirs et nos offres culturels actuelles</h2>
+    <p class="undertext">Depuis sa création, La Fabrique de l'Esprit® développe des contenus pédagogiques, élabore des programmes éducatifs culturels, à l’appui d’œuvres contemporaines, et des œuvres de la collection Francès. L’ensemble de ces programmes répond à des enjeux éducatifs, artistiques et culturels.</p>
+    <p class="undertext">En 2017, elle devient membre du mouvement des clubs français pour l’UNESCO. L’accréditation est émise par le Commission Nationale Française pour l’UNESCO. Un prolongement évident tant les missions accomplies répondent aux mêmes enjeux sur le plan de l’éducation, des échanges internationaux et du partage de connaissances pour conserver un patrimoine et défendre des valeurs de paix et de collaborations.</p>
+  </div>
+  <button ion-button full color="danger" class="calltofde btncall" onclick="window.open('http://lafabriquedelespritlesamis.fr/', '_blank', 'location=yes', 'zoom=no');return false;">Voir le site de la FDE</button>
+</ion-content>

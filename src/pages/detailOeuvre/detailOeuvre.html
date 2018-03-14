@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="cards-bg">
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title class="oeuvreshow">
+        {{author}}
+      </ion-card-title>
+      <p class="oeuvreshowunder">{{authorBio}}</p>
+    </ion-card-content>
+    <img src={{image}}/>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small (click)="playAudio(); vibrate();" color="danger" icon-start>
+          <ion-icon name='headset'></ion-icon>
+          Ecouter le guide
+        </button>
+      </ion-col>
+      <ion-col>
+        <a button ion-button clear small href="{{url}}" onclick="window.open(this.href, '_blank', 'location=yes', 'zoom=no');return false;" (click)="vibrate();" color="danger" icon-start>
+          <ion-icon name='book'></ion-icon>
+          En savoir plus
+        </a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <div *ngIf="soundMenu==true">
+        <audio controls>
+          <source src="{{sound}}" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small (click)="fbShare(); vibrate();" color="danger" icon-start>
+          <ion-icon name='logo-facebook'></ion-icon>
+          facebook
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button clear small (click)="twShare(); vibrate();" color="danger" icon-start>
+          <ion-icon name='logo-twitter'></ion-icon>
+          twitter
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button clear small (click)="Share(); vibrate();" color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          plus
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>
+      <div>Exposition Virtuelle</div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+  <header>
+    <h1 class="playfair" style="color:black!important">L'éxposition virtuelle</h1>
+  </header>
+    <ion-card (click)="goToArtists()" block>
+      <img class="darken small" src="assets/imgs/addormire.jpg">
+      <div class="card-title">Les artistes</div>
+      <div class="card-subtitle">Un accès direct aux différents artistes</div>
+    </ion-card>
+    <ion-card class="card-background-page" (click)="goToOeuvres()" block>
+      <img class="darken small" src="assets/imgs/Lens20090228.jpg">
+      <div class="card-title">Les oeuvres</div>
+      <div class="card-subtitle">Un accès direct aux différentes oeuvres</div>
+    </ion-card>
+</ion-content>

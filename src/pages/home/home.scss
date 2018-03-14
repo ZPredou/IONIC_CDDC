@@ -1,0 +1,214 @@
+.homeBack{
+  background-color: #f7f8fa;
+}
+
+ion-fab {
+    button {
+        box-shadow: 0 4px 10px #6b6b6b;
+    }
+    ion-fab-list a[ion-fab] {
+        text-align: center;
+        overflow: visible;
+
+        div.label {
+          visibility: visible;
+          overflow: visible;
+          position: absolute;
+          right: 48px;
+          background: rgba(248, 248, 248, 1);
+          height: 24px;
+          line-height: 16px;
+          padding-left: 8px;
+          padding-right: 8px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          margin-top: 8px;
+          border-radius: 5px;
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .button-inner {
+        overflow: visible;
+    }
+}
+
+.fab {
+    contain: layout;
+}
+
+.backdrop {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.7);
+z-index: 99;
+}
+
+blockquote p { color: black; font-family: 'Merriweather', serif; font-size: 30px; font-weight: 300; margin: 0 30; text-align: center; text-shadow: black -1px -1px; }
+
+p.author { color: black; font-family: 'Helvetica Neue', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 3px; text-align: center; text-shadow: #f53d3d 1px 1px; text-transform: uppercase; }
+
+p.author span { color: black; font-family: 'Helvetica Neue', sans-serif; font-style: italic; font-weight: normal; letter-spacing: normal; text-transform: none; }
+
+blockquote p.title{
+  font-size: 50px !important;
+  margin: 0 30;
+  border-top:3px solid #d34836 ;
+  border-bottom: 3px solid #d34836;
+}
+
+.backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.7); z-index: 0}
+
+button.fab.fab-md.fab-close-active { z-index: 1; }
+
+img.logo{
+  width: 50%;
+  margin: auto;
+  display: block;
+  left:0;
+  margin:0;
+}
+
+.wrapping-title{
+  padding-top:60px;
+
+}
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 40px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: left; }
+
+
+h2 { color: #111; font-size: 20px; font-weight: 300; line-height: 32px; margin: 0 0 30px; text-align: center; }
+
+
+p > .undertext { color: #685206; font-family: 'Helvetica Neue', sans-serif; font-size: 15px; line-height: 24px; margin: 0 0 24px; text-align: justify;}
+
+.input-cover {
+position: static;
+}
+
+.fabhidden{
+  transition: all 1s ease-in;
+  opacity:0;
+}
+
+.fabshow{
+  opacity:1;
+}
+.caption-wrap{
+  opacity: 1;
+  margin:30px 10px 20px 15px;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0);
+  width: 75%;
+  top: 72vh;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  clear: none;
+  position: absolute;
+  text-align: right;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+.caption{
+  border-right: 1px solid #000;
+  margin-right: 15px;
+  padding-right:10px;
+}
+.caption-wrap .caption > h1{
+  font-size:12px;
+  text-align: right;
+  margin-bottom:0px;
+}
+.caption-wrap .caption > h2{
+  font-size:9px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 450;
+  margin-bottom:0px;
+}
+.caption-wrap .caption > p{
+  font-size:7px;
+  text-align: right;
+  margin:0;
+}
+.wrapping-title{
+  padding-top:40px;
+}
+img.banner{
+  visibility: none;
+  height:0px;
+}
+img.banner-mobile{
+  min-width:100%;
+  max-height:70vh;
+  visibility: visible;
+}
+/* Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  img.banner{
+    min-width:100%;
+    min-height:55vh;
+    visibility: visible;
+  }
+  img.banner-mobile{
+    visibility: none;
+    height:0px;
+  }
+  img.logo{
+    min-width:50%;
+  }
+  h1{
+    font-size: 80px;
+  }
+  h2{
+    padding-top:75px;
+    font-size: 40px;
+  }
+  p.undertext{
+    padding-top:40px;
+    font-size: 25px;
+  }
+  button.calltofde{
+    font-size: 25px;
+    height: 16%;
+  }
+  .caption-wrap{
+    top:57vh;
+  }
+  .caption{
+    border-right: 1px solid #000;
+    margin-right: 15px;
+    padding-right:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  .caption-wrap .caption > h1{
+    font-size:28px;
+    text-align: right;
+  }
+  .caption-wrap .caption > h2{
+    font-size:20px;
+    text-align: right;
+    padding-top:20px;
+    text-transform: uppercase;
+    font-weight: 450;
+  }
+  .caption-wrap .caption > p{
+    font-size:16px !important;
+    text-align: right;
+    padding-top:10px;
+  }
+  .wrapping-title{
+    padding-top:70px;
+  }
+  ion-fab[top]{
+    visibility: hidden;
+  }
+  .wrapping-title{
+    padding-top:70px;
+  }
+}

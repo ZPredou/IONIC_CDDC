@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="FDEexposition" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Ionic FDE</name>
+    <description>An awesome Ionic/Cordova app.</description>
+    <allow-navigation href="*" />
+    <content src="index.html" />
+    <content original-src="index.html" />
+    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="ScrollEnabled" value="false" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="30000" />
+    <preference name="HeaderColor" value="#d34836" />
+    <preference name="statusBarBackgroundColor" value="red" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#d34836" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="orientation" value="portrait" />
+    <platform name="android">
+        <preference name="ShowSplashScreenSpinner" value="false" />
+        <preference name="StatusBarStyle" value="lightcontent" />
+        <preference name="loadUrlTimeoutValue" value="700000" />
+        <allow-intent href="market:*" />
+        <splash density="land-ldpi" src="resources/android/splash/drawable-land-ldpi-screen.png" />
+        <splash density="land-mdpi" src="resources/android/splash/drawable-land-mdpi-screen.png" />
+        <splash density="land-hdpi" src="resources/android/splash/drawable-land-hdpi-screen.png" />
+        <splash density="land-xhdpi" src="resources/android/splash/drawable-land-xhdpi-screen.png" />
+        <splash density="land-xxhdpi" src="resources/android/splash/drawable-land-xxhdpi-screen.png" />
+        <splash density="land-xxxhdpi" src="resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+        <splash density="port-ldpi" src="resources/android/splash/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="resources/android/splash/drawable-port-mdpi-screen.png" />
+        <splash density="port-hdpi" src="resources/android/splash/drawable-port-hdpi-screen.png" />
+        <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <allow-navigation href="http://10.0.1.27:8101" />
+    <allow-navigation href="http://10.0.1.27:8100" />
+    <allow-navigation href="http://10.0.1.188:8101" />
+    <plugin name="cordova-plugin-vibration" spec="^2.1.6" />
+    <plugin name="cordova-plugin-youtube-video-player" spec="^1.0.6" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.1" />
+    <plugin name="cordova-plugin-device" spec="^1.1.4" />
+    <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
+    <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.2.4" />
+    <plugin name="phonegap-plugin-barcodescanner" spec="~7.0.0" />
+    <plugin name="cordova-plugin-headercolor" spec="^1.0.0" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^2.0.1" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.2.1" />
+    <allow-navigation href="http://10.0.1.2:8100" />
+    <allow-navigation href="http://10.0.1.2:8101" />
+    <allow-navigation href="http://10.0.1.94:8100" />
+    <allow-navigation href="http://10.0.1.5:8100" />
+    <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
+    <allow-navigation href="http://10.0.1.15:8100" />
+    <allow-navigation href="http://10.0.1.32:8100" />
+    <allow-navigation href="http://10.0.1.199:8100" />
+    <engine name="android" spec="6.4.0" />
+</widget>
