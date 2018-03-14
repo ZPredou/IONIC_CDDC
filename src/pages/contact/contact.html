@@ -7,11 +7,15 @@
 <ion-content class="card-background-page test" #container >
   <ion-grid>
     <div *ngIf="oeuvres !==''">
-      <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms" class="samesize">
-        <img class="samesize" [scrollTarget]="container._scrollContent.nativeElement" [lazyLoad]="oeuvre.image" [defaultImage]="defaultImage">
-        <div class="card-title">{{oeuvre.title}}</div>
-        <div class="card-subtitle">{{oeuvre.author}}</div>
-      </ion-card>
+      <div *ngFor="let oeuvre of oeuvres | search : terms" >
+        <div *ngIf="categ==oeuvre.categ">
+          <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" class="samesize">
+              <img class="samesize" [scrollTarget]="container._scrollContent.nativeElement" [lazyLoad]="oeuvre.image" [defaultImage]="defaultImage">
+              <div class="card-title">{{oeuvre.title}}</div>
+              <div class="card-subtitle">{{oeuvre.author}}</div>
+          </ion-card>
+        </div>
+      </div>
     </div>
     <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">
       <ion-card [@fadeInOut]>

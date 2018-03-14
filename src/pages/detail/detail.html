@@ -9,7 +9,14 @@
       <ion-card-title class="oeuvreshow">
         {{title}}
       </ion-card-title>
-      <p class="oeuvreshowunder">{{description}}</p>
+      <p class="oeuvreshowunder">Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus, propugnaculis insistebant et pinnis, congesta undique saxa telaque habentes in promptu, ut si quis se proripuisset interius, multitudine missilium sterneretur et lapidum.</p>
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button small (click)="goToDetailArtiste(); vibrate();" color="danger" icon-start>
+              En savoir plus sur l'artiste
+            </button>
+          </ion-col>
+        </ion-row>
     </ion-card-content>
     <img src={{image}}/>
     <div class="wrap-share">

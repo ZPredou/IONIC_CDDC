@@ -30,9 +30,11 @@ export class ContactPage{
   loader;
   defaultImage = './assets/imgs/placeholder-compressor.png';
   offset = 100;
+  categ;
 
-  constructor(public nav: NavController ,private elmRef: ElementRef, private vibration: Vibration ,private http: HttpClient ,private _data: DataProvider ,public loading: LoadingController) {
+  constructor(public nav: NavController ,private elmRef: ElementRef,public navParams: NavParams, private vibration: Vibration ,private http: HttpClient ,private _data: DataProvider ,public loading: LoadingController) {
     this.nav = nav;
+    this.categ = navParams.get("categ");
   }
   ngOnInit() {
 

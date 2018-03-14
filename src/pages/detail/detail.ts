@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { DetailOeuvrePage } from '../../pages/detailOeuvre/detailOeuvre';
 
 @Component({
   selector: 'page-detail',

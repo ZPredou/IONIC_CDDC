@@ -22,8 +22,10 @@ export class AboutPage {
     this.nav = nav;
 
   }
-  public goToOeuvres(){
-    this.nav.push(ContactPage);
+  public goToOeuvres(x){
+    this.nav.push(ContactPage, {
+      categ: x
+    });
   }
   public goToArtists(){
     this.nav.push(ArtistPage);

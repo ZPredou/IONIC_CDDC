@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {ReplaySubject} from 'rxjs/ReplaySubject';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
 
 @Injectable()
 export class DataProvider {
@@ -9,7 +9,7 @@ export class DataProvider {
 
   constructor() {
     this._db = firebase.database().ref('/');
-    this._oeuvresRef = firebase.database().ref('oeuvres');
+    this._oeuvresRef = firebase.database().ref('oeuvresCDDC');
     this._oeuvresRef.on('child_added', this.handleData, this);
     this._oeuvres$ = new ReplaySubject();
   }
