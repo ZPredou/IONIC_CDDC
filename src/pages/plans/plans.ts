@@ -33,21 +33,21 @@ export class PlansPage implements OnInit{
 
   constructor(public nav: NavController, public navParams: NavParams ,private vibration: Vibration ,private http: HttpClient) {
     this.nav = nav;
-  //   for(let i = 0; i < 4; i++){
-  //   this.groups[i]={
-  //     active: false,
-  //     id: i,
-  //     items: []
-  //   }
-  //   for (var j=0; j<3; j++) {
-  //     this.groups[i].items.push(i + '-' + j);
-  //   }
-  // }
+     for(let i = 0; i < 4; i++){
+     this.groups[i]={
+       active: false,
+       id: i,
+       items: []
+     }
+     for (var j=0; j<3; j++) {
+       this.groups[i].items.push(i + '-' + j);
+     }
+   }
   }
-  // toggleGroup(group){
-  //   group.active = !group.active
-  //   console.log(group)
-  // }
+   toggleGroup(group){
+     group.active = !group.active
+     console.log(group)
+   }
   ngOnInit(){
       this.http.get('./assets/oeuvres.json').subscribe(data => {
         this.oeuvres = data['oeuvres'];
