@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
 @Component({
@@ -6,15 +6,6 @@ import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
   templateUrl: 'school.html',
 })
 export class SchoolPage {
-  @ViewChild(Slides) slides: Slides;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-  ngOnInit(){
-  }
-  slideChanged() {
-  let currentIndex = this.slides.getActiveIndex();
-    if(currentIndex==3){
-      this.slides.stopAutoplay();
-    }
   }
 }

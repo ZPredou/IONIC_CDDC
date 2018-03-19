@@ -22,7 +22,6 @@ import { DetailOeuvrePage } from '../pages/detailOeuvre/detailOeuvre';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Vibration } from '@ionic-native/vibration';
-import { OneSignal } from '@ionic-native/onesignal';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { HeaderColor } from '@ionic-native/header-color';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
@@ -79,7 +78,6 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    OneSignal,
     HeaderColor,
     InAppBrowser,
     SocialSharing,
