@@ -43,14 +43,15 @@ export class ContactPage{
     let loader = this.loading.create({
       content: 'Récupération des oeuvres',
     });
+    loader.present();
     let that = this;
     loader.present().then(() => {
       this._data.oeuvres.subscribe((data) => {
         that.oeuvres.push(data);
+        if(this.oeuvres === that.oeuvres && loader){
+          loader.dismiss();
+        }
       });
-      if(this.oeuvres === that.oeuvres && loader){
-        loader.dismiss();
-      }
     });
   }
 

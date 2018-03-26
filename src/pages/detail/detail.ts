@@ -17,7 +17,8 @@ export class DetailPage {
   url:string;
   sound:string;
   soundMenu:boolean;
-
+  authorBio:string;
+  oeuvre;
   sharingOptions: object = {
     message: '@fondationfrances',
     url: this.url,
@@ -28,6 +29,8 @@ export class DetailPage {
 
   constructor(public nav: NavController, public navParams: NavParams, private iab: InAppBrowser, private vibration: Vibration, private socialSharing: SocialSharing) {
     this.navParams   = navParams;
+    this.oeuvre      = navParams.get('oeuvre');
+    this.authorBio       = this.navParams.get('oeuvre').authorBio;
     this.title       = this.navParams.get('oeuvre').title;
     this.description = this.navParams.get('oeuvre').description;
     this.image       = this.navParams.get('oeuvre').image;
@@ -47,6 +50,12 @@ export class DetailPage {
       this.soundMenu=true;
     }
   }
+  private goToDetailArtiste(oeuvre){
+    this.nav.push(DetailOeuvrePage , {
+      oeuvre: this.oeuvre
+    });
+  }
+
   twShare(){
     this.socialSharing.shareViaTwitter("Parlez de l'exposition @FFrancesArt", null , this.url).then(() => {
       console.log("shareViaTwitter: Success");

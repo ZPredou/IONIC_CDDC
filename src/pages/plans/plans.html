@@ -1,20 +1,17 @@
 <ion-content padding>
   <header>
-    <h1 class="playfair" style="color:black;">Scénographie de l'exposition</h1>
+    <h1 class="playfair" style="color:black;">Gallerie d'art du collège Abel Didelet</h1>
   </header>
-    <map name="dots" id="dots">
-          <area alt="" title="" (click)="goToDetail(oeuvres[0]); vibrate()" shape="circle" coords="86,75,50" />
-          <area alt="" title="" (click)="goToDetail(oeuvres[1]); vibrate()" shape="circle" coords="51,229,50" />
-          <area alt="" title="" (click)="goToDetail(oeuvres[2]); vibrate()" shape="circle" coords="156,230,50" />
-          <area alt="" title="" (click)="goToDetail(oeuvres[3]); vibrate()" shape="circle" coords="266,180,50" />
-    </map>
-    <!-- Accordion menu yet unused. -->
-    <ion-item-group *ngFor="let group of groups" >
-      <ion-item-divider color="light" (click)="toggleGroup(group)">
-        Etage {{group.id}}
-        <ion-icon item-left #accordion name="add" ></ion-icon>
-      </ion-item-divider>
-      <ion-item *ngFor="let item of group.items" [@expand]="group.active">{{item}}</ion-item>
-    </ion-item-group>
-
+  <p style="color:black">Phasellus euismod diam at ultricies tristique. Aliquam nec leo nunc. In quis ligula in lacus eleifend imperdiet ac quis tellus. Aliquam cursus dolor vitae augue posuere, a condimentum libero eleifend. Quisque tincidunt accumsan eros.</p>
+  <ion-slides>
+    <ion-slide pager>
+      <img src="assets/imgs/vue1.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/vue2.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/vue3.jpg">
+    </ion-slide>
+  </ion-slides>
 </ion-content>

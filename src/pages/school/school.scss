@@ -13,8 +13,8 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
      top: 50%;
      left: 50%;
      margin:0;
-     min-width: 100%;
-     max-height:100vh;
+     min-width: 200%;
+     min-height:100vh;
      width: auto;
      z-index: -100;
      -webkit-transform: translateX(-50%) translateY(-50%);
@@ -22,6 +22,7 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
      -ms-transform: translateX(-50%) translateY(-50%);
      -o-transform: translateX(-50%) translateY(-50%);
      transform: translateX(-50%) translateY(-50%);
+     filter:brightness(30%);
 }
 .bg{
   position: absolute !important;
@@ -30,12 +31,6 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
   top:0;
   z-index: -100;
   padding-left:-25px !important;
-}
-.bg-vid video {
-	background-attachment: fixed;
-  background-size: cover;
-  overflow:hidden;
-
 }
 .no-scroll .scroll-content{
      overflow: hidden;
@@ -114,7 +109,7 @@ header > h2{
   height:40%;
 }
 h3.schoolDesc{
-  font-size:12px;
+  font-size:14px;
   padding-top:10px;
   margin-top:10px;
   text-align: justify;
@@ -128,7 +123,14 @@ h3.schoolDesc{
 background: white;
 opacity: 1;
 }
-
+.wrapper-school{
+  padding-top:25vh;
+  color:white;
+  line-height: 5px;
+}
+ion-slides{
+  height:50%;
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   header > h2{
     font-size:80px;
