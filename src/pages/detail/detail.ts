@@ -30,7 +30,7 @@ export class DetailPage {
   constructor(public nav: NavController, public navParams: NavParams, private iab: InAppBrowser, private vibration: Vibration, private socialSharing: SocialSharing) {
     this.navParams   = navParams;
     this.oeuvre      = navParams.get('oeuvre');
-    this.authorBio       = this.navParams.get('oeuvre').authorBio;
+    this.authorBio   = this.navParams.get('oeuvre').authorBio;
     this.title       = this.navParams.get('oeuvre').title;
     this.description = this.navParams.get('oeuvre').description;
     this.image       = this.navParams.get('oeuvre').image;
