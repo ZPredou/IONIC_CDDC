@@ -1,6 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <div *ngIf="categ == 1">La défense des animaux</div>
+      <div *ngIf="categ == 2">La maltraitance</div>
+      <div *ngIf="categ == 3">L'abandon</div>
+      <div *ngIf="categ == 4">La tolérance face à la difference</div>
+      <div *ngIf="categ == 5">La liberté d'expression</div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
 <ion-content class="card-background-page test" #container >
   <ion-grid>
     <div *ngIf="oeuvres !==''">
+      <ion-card>
+        <ion-card-content>
+          <h1 class="oeuvreIntention">Note d'intention :</h1>
+          <div *ngIf="categ == 1">
+            <p>Nous avons choisi de traiter d'un sujet particulier celui de la protection animale.  Nous avons donc choisi plusieurs oeuvres en rapport parmi une sélection. Ce qui nous attriste le plus c'est le braconnage qui provoque la disparition d'espèces animales. Les animaux doivent être respectés.</p>
+            <p class="author">Ecrit par Janis, Alexis, Kilian, Souleymane, Mathéo, Mathis et Alexis.</p>
+          </div>
+          <div *ngIf="categ == 2">
+            <p>Notre groupe a décidé d'évoquer le sujet de la maltraitance. En tant qu'adolescentes, futures femmes, nous prenons conscience de la violence faite aux femmes et c'est ce que nous voulons dénoncer. Nous apprécions que des artistes s'engagent à montrer par le biais de leur travail l'horreur de certains actes.</p>
+            <p class="author">Ecrit par Léa, Margaux, Héloise, Amandine, Maya et Amélie.</p>
+          </div>
+          <div *ngIf="categ == 3">
+            <p>Nous avons choisi le thème de l'abandon car c'est un sujet qui nous attriste, l'entraide devrait être naturelle. Nous souhaitons, par le biais des oeuvres, montrer l'abandon du point de vue de l'enfance, des personnes âgées, des marginaux...etc. Face aux oeuvres les spectateurs prennent conscience de se sujet sensible. </p>
+            <p class="author">Ecrit par Fantine, Margaux, Julie, Delphine et Henrique.</p>
+          </div>
+          <div *ngIf="categ == 4">
+            <p>Notre groupe a décidé de travailler sur le thème de la tolérance face à la différence. Nous souhaitons faire valoir la tolérance face aux différences de chacun. Grâce à l'association La Fabrique de l'Esprit, qui dispose d'oeuvres de la collection Francès, nous faisons le choix d'une sélection d'oeuvres pour réaliser notre exposition virtuelle sur notre sujet. Nous voudrions sensibiliser les spectateurs qui, en sortant de l'exposition, devraient porter un regard différent sur ces personnes si singulières. Nous rêvons d'un monde sans discrimination et sans moqueries.</p>
+            <p class="author">Ecrit par Perrick, Mathis, Samuel, Nathan et Erwann.</p>
+          </div>
+          <div *ngIf="categ == 5">
+            <p>Dans le cadre du projet d'exposition virtuelle sur la thématique de l'engagement nous avons choisi de nous orienter vers le sujet de la liberté d'expressions par le dessin.
+Le dessin permet à chacun d'entre nous d'exprimer ses idées et de s'engager dans différentes causes. De nombreuses personnes utilisent le dessin pour transmettre un message, cela va du public lambda à des artistes plus reconnus comme Plantu ou  Caméléon un artiste de street art. Le dessin transmet des émotions. Il est parfois plus facile de s'exprimer ainsi que par les mots. Le dessin et l'imaginaire font vivre nos paroles à travers ce que l'on créé.
+            </p>
+            <p class="author">Ecrit par Léa, Margaux, Héloise, Amandine, Maya et Amélie.</p>
+          </div>
+        </ion-card-content>
+      </ion-card>
       <div *ngFor="let oeuvre of oeuvres | search : terms" >
         <div *ngIf="categ==oeuvre.categ">
           <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" class="samesize">

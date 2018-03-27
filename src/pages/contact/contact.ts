@@ -31,6 +31,7 @@ export class ContactPage{
   defaultImage = './assets/imgs/placeholder-compressor.png';
   offset = 100;
   categ;
+  categTitle;
 
   constructor(public nav: NavController ,private elmRef: ElementRef,public navParams: NavParams, private vibration: Vibration ,private http: HttpClient ,private _data: DataProvider ,public loading: LoadingController) {
     this.nav = nav;
@@ -48,11 +49,9 @@ export class ContactPage{
     loader.present().then(() => {
       this._data.oeuvres.subscribe((data) => {
         that.oeuvres.push(data);
-        if(this.oeuvres === that.oeuvres && loader){
-          loader.dismiss();
-        }
       });
     });
+    loader.dismiss();
   }
 
   private vibrate(){

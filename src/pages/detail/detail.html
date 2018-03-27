@@ -1,14 +1,15 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>{{author}}</ion-title>
+    <ion-title>{{author}} </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content class="cards-bg">
   <ion-card>
     <ion-card-content>
       <ion-card-title class="oeuvreshow">
-        {{title}}
+        {{title}} | <span class="oeuvreDate">{{date}}</span>
       </ion-card-title>
+      <p class="oeuvreSize">{{size}}</p>
       <p class="oeuvreshowunder">{{description}}</p>
         <ion-row no-padding>
           <ion-col>

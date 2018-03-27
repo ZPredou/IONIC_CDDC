@@ -34,7 +34,7 @@
     "@ionic-native/youtube-video-player": "^4.5.0",
     "@ionic/pro": "1.0.16",
     "@ionic/storage": "2.1.3",
-    "cordova-android": "7.0.0",
+    "cordova-android": "6.4.0",
     "cordova-ios": "4.5.4",
     "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-device": "^1.1.4",
@@ -48,7 +48,7 @@
     "cordova-plugin-x-socialsharing": "^5.2.1",
     "cordova-plugin-x-toast": "^2.6.0",
     "cordova-plugin-youtube-video-player": "^1.0.6",
-    "es6-promise-plugin": "^4.1.0",
+    "es6-promise-plugin": "^2.2.1",
     "firebase": "^4.9.1",
     "ionic-angular": "3.9.2",
     "ionic-plugin-keyboard": "^2.2.1",
@@ -79,8 +79,11 @@
       "cordova-plugin-headercolor": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-inappbrowser": {},
-      "cordova-plugin-x-socialsharing": {}
+      "cordova-plugin-x-socialsharing": {},
+      "es6-promise-plugin": {}
     },
-    "platforms": []
+    "platforms": [
+      "android"
+    ]
   }
 }

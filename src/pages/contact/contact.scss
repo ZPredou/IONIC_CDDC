@@ -64,7 +64,16 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
  ion-card > img.samesize{
    height:42vh !important;
  }
-
+ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-contact > ion-content > div.scroll-content > ion-grid > div > div:nth-child(22) > div > ion-card > div.card-subtitle{
+   padding-top:40px;
+ }
+h1.oeuvreIntention{
+  padding-bottom:15px;
+}
+p.author{
+  font-size:10px;
+  font-style:italic;
+}
  /* Portrait*/
  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
    div.card-title{

@@ -18,6 +18,8 @@ export class DetailPage {
   sound:string;
   soundMenu:boolean;
   authorBio:string;
+  date:string;
+  size:string;
   oeuvre;
   sharingOptions: object = {
     message: '@fondationfrances',
@@ -30,6 +32,8 @@ export class DetailPage {
   constructor(public nav: NavController, public navParams: NavParams, private iab: InAppBrowser, private vibration: Vibration, private socialSharing: SocialSharing) {
     this.navParams   = navParams;
     this.oeuvre      = navParams.get('oeuvre');
+    this.date        = this.navParams.get('oeuvre').date;
+    this.size        = this.navParams.get('oeuvre').size;
     this.authorBio   = this.navParams.get('oeuvre').authorBio;
     this.title       = this.navParams.get('oeuvre').title;
     this.description = this.navParams.get('oeuvre').description;

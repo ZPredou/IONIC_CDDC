@@ -123,10 +123,15 @@ h3.schoolDesc{
 background: white;
 opacity: 1;
 }
-.wrapper-school{
+div .wrapper-school {
   padding-top:25vh;
   color:white;
   line-height: 5px;
+  font-size: 8px !important;
+}
+div .wrapper-school p{
+  line-height: 5px;
+  font-size: 8px !important;
 }
 ion-slides{
   height:50%;

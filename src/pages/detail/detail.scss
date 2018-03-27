@@ -22,6 +22,13 @@ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, 
 background-image: -webkit-linear-gradient(top, #fede00 0%, #fcc500 100%);
 background-image: linear-gradient(to bottom, #fede00 0%, #fcc500 100%);
 }
+.oeuvreSize{
+  font-size: 10px !important;
+  font-style: italic;
+}
+ion-card-title.oeuvreshow{
+  font-weight: bold;
+}
 /* Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   .oeuvreshow{
