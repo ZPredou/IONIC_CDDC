@@ -46,7 +46,7 @@ header h2 {
     color:white;
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-transform: uppercase;
     -moz-transition: all,0.8s;
     -o-transition: all,0.8s;
@@ -96,20 +96,18 @@ video{
     width: 100%;
     font-weight: bold;
     color: #fff;
-    padding-bottom:10px !important;
     margin-bottom:10px !important;
 }
 header > h2{
-  font-size:15px;
+  font-size:12px;
   line-height:33px;
-  padding-top:15px;
-  padding-bottom:15px;
+
 }
 .mainslide{
   height:40%;
 }
 h3.schoolDesc{
-  font-size:14px;
+  font-size:11px;
   padding-top:10px;
   margin-top:10px;
   text-align: justify;
@@ -119,22 +117,46 @@ h3.schoolDesc{
   //border-top: 3px solid white;
   //margin-top: 10px;
 //}
+.underline{
+  text-decoration: underline;
+}
 .swiper-pagination-bullet-active {
 background: white;
 opacity: 1;
 }
 div .wrapper-school {
-  padding-top:25vh;
   color:white;
   line-height: 5px;
   font-size: 8px !important;
+  padding-top:5vh;
 }
 div .wrapper-school p{
   line-height: 5px;
   font-size: 8px !important;
+  padding-top:5px;
 }
 ion-slides{
   height:50%;
+}
+.container-school h1{
+  color:white;
+  text-align: left;
+  font-size:16px;
+  text-decoration: underline;
+}
+.container-school p{
+  color:white;
+  font-size:9px;
+  padding-left: 10px;
+}
+.container-school ul{
+  color:white;
+  font-size:9px;
+  margin-left: 0px;
+}
+.container-school ul li{
+  color:white;
+  font-size:9px;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   header > h2{

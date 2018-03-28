@@ -63,6 +63,7 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
  }
  ion-card > img.samesize{
    height:42vh !important;
+   object-fit: cover;
  }
  body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-contact > ion-content > div.scroll-content > ion-grid > div > div:nth-child(22) > div > ion-card > div.card-subtitle{
    padding-top:40px;

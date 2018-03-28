@@ -23,9 +23,15 @@ export class DetailOeuvrePage {
     url: this.url,
     subject: 'Exposition du moment',
   };
+  bornText;
+  techText;
+  workText;
 
   constructor(public nav: NavController, public navParams: NavParams, private iab: InAppBrowser, private vibration: Vibration, private socialSharing: SocialSharing) {
     this.navParams       = navParams;
+    this.bornText        = this.navParams.get('oeuvre').bornText;
+    this.techText        = this.navParams.get('oeuvre').techText;
+    this.workText        = this.navParams.get('oeuvre').workText;
     this.authorBio       = this.navParams.get('oeuvre').authorBio;
     this.title           = this.navParams.get('oeuvre').title;
     this.description     = this.navParams.get('oeuvre').description;

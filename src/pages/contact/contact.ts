@@ -40,6 +40,9 @@ export class ContactPage{
   ngOnInit() {
 
   }
+  ionViewDidEnter(){
+    this.vibration.vibrate([30]);
+  }
   ionViewDidLoad(){
     let loader = this.loading.create({
       content: 'Récupération des oeuvres',

@@ -9,11 +9,13 @@
       <ion-card-title class="oeuvreshow">
         {{title}} | <span class="oeuvreDate">{{date}}</span>
       </ion-card-title>
+      <p class="oeuvreSize">{{techText}}</p>
       <p class="oeuvreSize">{{size}}</p>
+      <p class="oeuvreSize">© collection Francès</p>
       <p class="oeuvreshowunder">{{description}}</p>
         <ion-row no-padding>
           <ion-col>
-            <button ion-button small (click)="goToDetailArtiste(); vibrate();" color="danger" icon-start>
+            <button ion-button small (click)="goToDetailArtiste()" color="danger" icon-start>
               En savoir plus sur l'artiste
             </button>
           </ion-col>

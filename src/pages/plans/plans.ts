@@ -20,6 +20,9 @@ export class PlansPage{
     this.nav = nav;
   }
   goToSlide() {
-  this.slides.slideTo(2, 500);
-}
+    this.slides.slideTo(2, 500);
+  }
+  ionViewDidEnter(){
+    this.vibration.vibrate([30]);
+  }
 }

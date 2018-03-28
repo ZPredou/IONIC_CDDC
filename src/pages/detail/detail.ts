@@ -21,6 +21,9 @@ export class DetailPage {
   date:string;
   size:string;
   oeuvre;
+  bornText;
+  techText;
+  workText;
   sharingOptions: object = {
     message: '@fondationfrances',
     url: this.url,
@@ -32,6 +35,9 @@ export class DetailPage {
   constructor(public nav: NavController, public navParams: NavParams, private iab: InAppBrowser, private vibration: Vibration, private socialSharing: SocialSharing) {
     this.navParams   = navParams;
     this.oeuvre      = navParams.get('oeuvre');
+    this.bornText    = this.navParams.get('oeuvre').bornText;
+    this.techText    = this.navParams.get('oeuvre').techText;
+    this.workText    = this.navParams.get('oeuvre').workText;
     this.date        = this.navParams.get('oeuvre').date;
     this.size        = this.navParams.get('oeuvre').size;
     this.authorBio   = this.navParams.get('oeuvre').authorBio;
