@@ -16,7 +16,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { DetailPage } from '../pages/detail/detail';
 import { SchoolPage } from '../pages/school/school';
 import { PlansPage } from '../pages/plans/plans';
-import { ArtistPage } from '../pages/artist/artist';
 import { DetailOeuvrePage } from '../pages/detailOeuvre/detailOeuvre';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -45,7 +44,6 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     SchoolPage,
     PlansPage,
     FilterPipe,
-    ArtistPage,
     DetailOeuvrePage
   ],
   imports: [
@@ -68,7 +66,6 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     TabsPage,
     DetailPage,
     SchoolPage,
-    ArtistPage,
     PlansPage,
     DetailOeuvrePage
 

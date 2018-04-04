@@ -51,40 +51,10 @@ export class DetailPage {
   private vibrate(){
     this.vibration.vibrate([30]);
   }
-  playAudio(){
-    if(this.soundMenu)
-    {
-      this.soundMenu=false;
-    }
-    else{
-      this.soundMenu=true;
-    }
-  }
+  
   private goToDetailArtiste(oeuvre){
     this.nav.push(DetailOeuvrePage , {
       oeuvre: this.oeuvre
-    });
-  }
-
-  twShare(){
-    this.socialSharing.shareViaTwitter("Parlez de l'exposition @FFrancesArt", null , this.url).then(() => {
-      console.log("shareViaTwitter: Success");
-    }).catch(() => {
-      console.error("shareViaTwitter: failed");
-    });
-  }
-  fbShare(){
-    this.socialSharing.shareViaFacebook("Parlez de l'exposition @fondationfrances", null , this.url).then(() => {
-      console.log("shareViaFacebook: Success");
-    }).catch(() => {
-      console.error("shareViaFacebook: failed");
-    });
-  }
-  Share() {
-    this.socialSharing.shareWithOptions(this.sharingOptions).then(() => {
-      console.log("shareWithOptions: Success");
-    }).catch(() => {
-      console.error("shareWithOptions: failed");
     });
   }
 }

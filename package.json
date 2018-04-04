@@ -85,7 +85,8 @@
       "es6-promise-plugin": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

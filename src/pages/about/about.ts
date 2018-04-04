@@ -2,7 +2,6 @@ import { Component , OnInit, Injectable} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DetailPage } from '../detail/detail';
 import { ContactPage } from '../contact/contact';
-import { ArtistPage } from '../artist/artist';
 import { HttpClient } from '@angular/common/http';
 import { Vibration } from '@ionic-native/vibration';
 
@@ -30,8 +29,4 @@ export class AboutPage {
       categ: x
     });
   }
-  public goToArtists(){
-    this.nav.push(ArtistPage);
-  }
-
 }

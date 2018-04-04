@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
-import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { SocialSharing } from '@ionic-native/social-sharing';
 
 @Component({
   selector: 'page-detailOeuvre',
@@ -18,16 +16,11 @@ export class DetailOeuvrePage {
   url:string;
   sound:string;
   soundMenu:boolean;
-  sharingOptions: object = {
-    message: '@fondationfrances',
-    url: this.url,
-    subject: 'Exposition du moment',
-  };
   bornText;
   techText;
   workText;
 
-  constructor(public nav: NavController, public navParams: NavParams, private iab: InAppBrowser, private vibration: Vibration, private socialSharing: SocialSharing) {
+  constructor(public nav: NavController, public navParams: NavParams, private vibration: Vibration) {
     this.navParams       = navParams;
     this.bornText        = this.navParams.get('oeuvre').bornText;
     this.techText        = this.navParams.get('oeuvre').techText;
@@ -42,14 +35,5 @@ export class DetailOeuvrePage {
   }
   private vibrate(){
     this.vibration.vibrate([30]);
-  }
-  playAudio(){
-    if(this.soundMenu)
-    {
-      this.soundMenu=false;
-    }
-    else{
-      this.soundMenu=true;
-    }
   }
 }

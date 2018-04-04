@@ -5,8 +5,8 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
   text-align: center;
   font-size:15px;
 }
-body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-school > ion-content > div.scroll-content > header > h1{
-  padding-top:5vh;
+body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-school > ion-content > div.scroll-content > div.container-school > div.schoolEquip {
+  line-height: 2px;
 }
 .bg-vid {
      position: absolute;
@@ -128,12 +128,15 @@ div .wrapper-school {
   color:white;
   line-height: 5px;
   font-size: 8px !important;
-  padding-top:10px;
 }
-div .wrapper-school p{
-  line-height: 5px;
-  font-size: 10px !important;
-  padding-top:5px;
+div .wrapper-school{
+  font-size: 5px !important;
+  bottom:1vh;
+  line-height: 4px;
+  position: absolute;
+}
+body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-school > ion-content > div.scroll-content > div.wrapper-school > p{
+  font-size:9px;
 }
 ion-slides{
   height:50%;
@@ -148,7 +151,6 @@ ion-slides{
   color:white;
   font-size:11px;
   padding-left: 10px;
-  line-height: 3px;
 }
 .container-school ul{
   color:white;
@@ -159,7 +161,7 @@ ion-slides{
   color:white;
   font-size:11px;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   header > h2{
     font-size:80px;
     line-height: 75px;
@@ -167,8 +169,8 @@ ion-slides{
     margin-top:75px;
   }
   h3.schoolDesc{
-    font-size:24px;
-    margin-top:0;
+    font-size:35px;
+    margin-top:10px;
     text-align: justify;
     margin-bottom:5%;
   }
@@ -179,4 +181,14 @@ ion-slides{
     height:20px;
     width:20px;
   }
+  .container-school ul li{
+    font-size:24px;
+  }
+  div.wrapper-school > p{
+    font-size:20px !important;
+  }
+  div.wrapper-school{
+          padding-top:3vh;
+  }
+
 }

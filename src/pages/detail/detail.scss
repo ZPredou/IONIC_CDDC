@@ -40,4 +40,22 @@ ion-card-title.oeuvreshow{
   p{
     font-size: 2.5rem !important;
   }
+  .oeuvreSize{
+    font-size: 1.9rem !important;
+    font-style: italic;
+  }
+body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-detail > ion-content > div.scroll-content > ion-card > ion-card-content > ion-row > ion-col{
+  min-height:7vh;
+}
+.oeuvreshowunder{
+  padding-bottom:1vh;
+}
+body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-detail > ion-content > div.scroll-content > ion-card > ion-card-content > ion-row > ion-col > button > span{
+  font-size:2.7em !important;
+}
+body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-detail > ion-content > div.scroll-content > ion-card > ion-card-content > ion-row > ion-col > button{
+  min-height:7vh;
+  padding-top:1.5vh;
+  padding-bottom:1.5vh;
+}
 }

@@ -151,7 +151,7 @@ img.banner-mobile{
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   img.banner{
     min-width:100%;
-    min-height:55vh;
+    min-height:70vh;
     visibility: visible;
   }
   img.banner-mobile{
@@ -161,13 +161,16 @@ img.banner-mobile{
   img.logo{
     min-width:50%;
   }
-  h1{
+  h1.playfair{
     font-size: 80px;
   }
-  h2{
-    padding-top:75px;
-    font-size: 40px;
-  }
+body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(2) > page-school > ion-content > div.scroll-content > header > h2{
+  font-size:34px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-top:0px;
+  line-height:34px;
+}
   p.undertext{
     padding-top:40px;
     font-size: 25px;
@@ -177,7 +180,7 @@ img.banner-mobile{
     height: 16%;
   }
   .caption-wrap{
-    top:57vh;
+    top:70vh;
   }
   .caption{
     border-right: 1px solid #000;
